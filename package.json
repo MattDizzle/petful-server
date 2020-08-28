@@ -1,0 +1,30 @@
+{
+  "name": "petful.server",
+  "version": "1.0.0",
+  "description": "petful server app",
+  "keywords": [],
+  "author": "Matthew Rougely",
+  "license": "UNLICENSED",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --require test/setup.js",
+    "start": "nodemon src/server.js",
+    "predeploy": "npm audit",
+    "deploy": "git push heroku master"
+  },
+  "engines": {
+    "node": "10.15.3"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "helmet": "^3.20.0",
+    "mocha": "^6.2.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
+  }
+}
